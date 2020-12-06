@@ -27,7 +27,7 @@
   position: Software Engineer
   duration: Feb, 2014 &mdash; Jan, 2016
   summary:
-    - Part of CERN Cloud Infrastructure team: OpenStack deployment with ~7000 compute nodes
+    - Part of CERN Cloud Infrastructure team; OpenStack deployment with ~7000 compute nodes
     - Deployed a workflow automation tool to reduce toil and ease the operational cost of running a private cloud
     - Identify and implement workflows to automate routine operational procedures on the CERN Cloud
     - Deployed fully puppetized, resilient, distributed, and highly available services
