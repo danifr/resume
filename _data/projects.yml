@@ -1,16 +1,17 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
-# jazznotes.io
-- project: jazznotes.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
-  # url: "#"
-  description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+# Wordpress blog
+- project: Details that make things not work
+  role: Main collaborator
+  duration: 2010 &mdash; Present
+  url: "https://dafero.wordpress.com"
+  description: Personal Blog
 
-# Springfield Community Outreach Group
-- project: Springfield Community Outreach Group
-  role: Co-Founder & Organizer
-  duration: 2007 &mdash; Present
-  # url: "#"
-  description: SCOG is a local monthly meetup in Springfield where we share opportunities to volunteer in the community and organize support for families and neighborhoods in need of assistance that the community can provide.
+# Evafobi
+- project: Changeability evaluator of bi-dimensional figures
+  role: Main developer
+  duration: 2010
+  url: "https://evafo2d.sourceforge.io"
+  description: Implementation of the scientific paper <a href="https://www.researchgate.net/publication/220146390_A_Stochastic_Order_of_Shape_Variability_with_an_Application_to_Cell_Nuclei_Involved_in_Mastitis">A Stochastic Order of Shape Variability with an Application to Cell Nuclei Involved in Mastitis</a>
+

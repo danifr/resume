@@ -1,12 +1,4 @@
 # Skills
-# Organizational leadership
-- skill: Organizational leadership
-  description: I have several years of experience leading organziations from community groups to business departments. From public speaking, to mentoring, to coordination of people and events, I can lead in any context.
-
-# Communications strategy
-- skill: Communications strategy
-  description: Content and marketing strategy,
-
-# Digital content development and creation
-- skill: Digital content development and creation
-  description: Copy writing, graphic design, web design, front-end web development, print design
+# Computer skills
+- skill: Computer skills
+  description: <ul class="resume-item-list"><li>Knowledge of Unix/Linux Systems administration and Windows Operating Systems<ul><li>Advanced RHEL/CentOS knowledge</li><li>Arch User Repository package maintainer</li></ul></li><li>Advanced coding Python, Bash, Puppet and Java</li><li>Active Github member. Both project maintainer and contributor<ul><li>Find some of my projects here, https://github.com/danifr</li><li>Member of Voxpupuli (https://voxpupuli.org). Invited to join after contributing to several community maintained Puppet modules</li></ul></li><li>Familiar with the Agile principles and DevOps. JIRA advanced user</li><li>Experience managing OpenStack, Apache, Nginx, HAProxy, MySQL, InfluxDB, Grafana, FreeIPA</li><li>Day to day usage of Docker, Kubernetes, Gitlab CI and Openshift</li></ul>

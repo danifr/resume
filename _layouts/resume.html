@@ -36,7 +36,7 @@
         </div>
 
         <div class="executive-summary" itemprop="description">
-          {{ site.resume_header_intro }}
+          <b>{{ site.resume_header_intro }}</b>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -78,8 +78,8 @@
 
         {% for education in site.data.education %}
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
-          <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
+          <h3 class="resume-item-title" itemprop="name">{{ education.degree }}</h3>
+          <h4 class="resume-item-details group" itemprop="description">{{ education.uni }} &bull; {{ education.year }}</h4>
           <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
           <p class="resume-item-copy" itemprop="description">
             <ul class="resume-item-list">
@@ -153,6 +153,26 @@
 
       </section>
       <!-- end Recognition -->
+      {% endif %}
+
+      {% if site.resume_section_research %}
+      <!-- begin Research -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Conferences, Courses & Published Papers</h2>
+        </header>
+
+        {% for research in site.data.researches %}
+        <div class="resume-item">
+          <h3 class="resume-item-title" itemprop="award">{{ research.award }}</h3>
+          <h4 class="resume-item-details">{{ research.organization }} &bull; {{ research.year }}</h4>
+          <p class="resume-item-copy">{{ research.summary }}</p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Research -->
       {% endif %}
 
       {% if site.resume_section_associations %}
@@ -232,8 +252,7 @@
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
+        <p class="footer-line">Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
       </footer>
 
     </div>

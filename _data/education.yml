@@ -1,13 +1,15 @@
 # Degree
-- degree: Bachelor of Arts, Human Rights
-  uni: Yale University
-  year: 2004 &mdash; 2008
-  awards:
-    - award: Summa Cumme Laude graduate
-  summary: If you had any meaningful roles at college, feel free to write about them here
+- degree: Master’s in Information Systems
+  uni: University Rey Juan Carlos, Madrid
+  year: 2018
 
-- degree: High School Diploma
-  uni: Springfield High School
-  year: 2004
-  award: Most likely to succeed
-  summary: You can choose to have either a single or multiple awards
+- degree: Bachelor's in Software Engineering
+  uni: University of Oviedo, Asturias
+  year: 2015
+  award: Graded with honors on the project “Integrating OpenStack with an Active Directory”
+  summary: Awarded with a scholarship to study one semester at Canisius College, NY, USA. Part of the Dean’s Honor Mention award for excellence grades.
+
+- degree: Technical Computer Engineering Degree
+  uni: University of Oviedo, Asturias
+  year: 2010
+  award: Graded with honors on the project “Changeability evaluator of bi-dimensional figures”
