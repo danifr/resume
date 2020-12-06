@@ -60,7 +60,11 @@
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
           <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
+          <ul>
+          {% for line in job.summary %}
+            <li class="resume-item-copy">{{ line }}</li>
+          {% endfor %}
+          </ul>
         </div><!-- end of resume-item -->
         {% endfor %}
 
@@ -165,7 +169,7 @@
 
         {% for research in site.data.researches %}
         <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">{{ research.award }}</h3>
+          <h3 class="resume-item-title" itemprop="award">{% if research.url %}<a href="{{ research.url }}">{{ research.award }}</a>{% else %}{{ research.award }}{% endif %}</h3>
           <h4 class="resume-item-details">{{ research.organization }} &bull; {{ research.year }}</h4>
           <p class="resume-item-copy">{{ research.summary }}</p>
         </div>

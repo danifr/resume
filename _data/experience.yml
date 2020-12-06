@@ -1,24 +1,51 @@
 # Jobs
+# SRE at BBP EPFL
+- company: EPFL Blue Brain Project - Geneva &bull;  🇨🇭
+  position: Site Reliability Engineer
+  duration: Mar, 2020 &mdash; present
+  summary:
+    - Reworked existing SSO service to make it more resilient and highly available
+    - Deployed new service to launch Jupyter notebooks directly on BB5 via Slurm scheduler
+    - Aided with migration from puppet v4 to puppet v6
+    - Strong focus in reducing technical debt, automating tasks and cleaning up old code and services
+    - Provide help and technical advice to other members of the organization
+
 # Fellow at CERN
-- company: CERN (Authentication and Authorization Team) - Geneva &bull;  🇨🇭
-  position: Fellow
+- company: CERN (Authentication and Authorization Team) - Geneva &bull;🇨🇭
+  position: Software Engineer
   duration: Feb, 2016 &mdash; Jan, 2020
-  summary: Responsible for migrating to an open source alternative the existing IAM infrastructure based on Microsoft techologies. The new service aims to secure 10.000+ apps via SAML (Security Assertion Markup Language) and OpenID Connect hosted inside and outside CERN. In addition to this, I actively worked on adding continuous integration and continuous delivery for several projects (user portals, APIs and  middleware adapters). Additionally, I developed an OIDC protected RESTful API using Flask to facilitate the integration of our systems with the new Single Sign-On service. This Flask application runs on a container on Openshift and its deployed via Gitlab CI/CD pipelines.
+  summary:
+    - Maintained Identity and Access Management infrastructure based on Microsoft technologies
+    - Deployed and configured Keycloak to secure 10.000+ CERN applications
+    - Defined and planned the migration from ADFS to Keycloak
+    - Added continuous integration and continuous delivery for team internal projects
+    - Developed RESTful API to integrate Keycloak with other systems at CERN
+    - Migrated applications to containers and deploy them on PaaS
 
 # Project Associate
 - company: CERN (Cloud Infrastructure Team) - Geneva &bull;  🇨🇭
-  position: Project Associate
+  position: Software Engineer
   duration: Feb, 2014 &mdash; Jan, 2016
-  summary: Responsible for the CERN Cloud Infrastructure's deployment of Rundeck, a workflow orchestration tool. I achieved a fully puppetized, resilient, distributed, and highly available service. I adapted Rundeck to the peculiarities of the existing CERN Infrastructure, Single Sign-On integration, retrieve nodes definition from PuppetDB, and developed a puppet module with support for teigi secrets. My duties also required functional analysis in order to identify and implement workflows to automate routine operational procedures. In addition to this, I was the main developer for a set of Python libraries and scripts to interact with other services deployed at CERN such as Active Directory and FIM, Service-Now, OpenStack, Foreman and Rundeck itself. This project is a collaborative effort and everyone can contribute and participate from CERN Gitlab repository. Currently, this piece of sotfware is still being used by the CERN Cloud Team.
+  summary:
+    - Part of CERN Cloud Infrastructure team: OpenStack deployment with ~7000 compute nodes
+    - Deployed a workflow automation tool to reduce toil and ease the operational cost of running a private cloud
+    - Identify and implement workflows to automate routine operational procedures on the CERN Cloud
+    - Deployed fully puppetized, resilient, distributed, and highly available services
+    - Developed a set of python libraries and scripts to interact with other services deployed at CERN
 
 # IT Consultant
 - company: Inter-American Development Bank - Washington DC &bull;  🇺🇸
-  position: IT Consultant
+  position: IT Security Consultant
   duration: Jun, 2013  &mdash; Dec, 2013
-  summary: Based in Washington DC (USA), I was responsible for the installation, deployment, and configuration of AppSense (now https://ivanti.com), a Management Platform tool for Microsoft Windows. The aim of the project was to distribute, install and configure a list of approved software on all centrally managed computers in the company. AppSense followed a client-server architecture. Windows Server 2008 and a mixed environment of Windows 7, Windows 8 and Windows 8.1 on the client side. The total number of users at the end of the deployment was 5000 (all the employees of the Inter-American Development Bank headquarters)
+  summary:
+    - Responsible for the installation, deployment, and configuration of AppSense (now https://ivanti.com), a Management Platform tool for Windows to control what users can install on their computers
+    - Around 5.000 of the bank employees still use it every day
 
-# IT Consultant
+# ICEX
 - company: ICEX (Spanish Institute for Foreign Trade) - Madrid &bull;  🇪🇸
-  position: IT Manager
+  position: Junior Software Engineer
   duration: Sep, 2011  &mdash; Oct, 2012
-  summary: During my time working as an IT Manager for the Spanish Institute for Foreign Trade, I was responsible for all the IT matters affecting the offices under my supervision (Portugal, Greece and Equatorial Guinea). I provided IT support for more than 50 users in total. Responsibilities also included frequent business trips to each office. In addition to this, I was also required to write technical documentation for our end users. Apart from day-to-day user support, I also installed, maintained, upgraded, and managed servers based on Windows Server 2003 RC2 and GNU/Linux Debian Squeeze together with managing back-up policies and tape systems (based on Symantec technologies)
+  summary:
+    - Responsible for providing remote IT support to a total of 50 users from three different ICEX offices
+    - Responsibilities also included frequent business trips to each office
+    - Installed, maintained, upgraded, and managed servers. Back-up policy and tape systems (Symantec)
