@@ -23,7 +23,7 @@ resume_contact_address:         "Geneva, Switzerland"
 resume_header_contact_info:     "Geneva, Switzerland • danielfr@outlook.com"
 display_header_contact_info:    "true"
 
-resume_header_intro: "<p>Multi-skilled computer engineer with strong focus on operations and development (DevOps). On top of this, I am an open-source enthusiast and I actively participate in the open source community.</p>"
+resume_header_intro: "<p>$> Multi-skilled software engineer with a demonstrated experience deploying and running services in production. I am an open-source enthusiast and I actively participate in the open source community.</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
