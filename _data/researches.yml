@@ -1,5 +1,10 @@
 # Researches
-- award: CERN’s Identity and Access Management, A journey to Open Source
+- award: Kubernetes From Scratch For Neuroscientific Research
+  organization: KubeCon Europe - Amsterdam, Netherlands
+  year: 2023
+  url: https://sched.co/1HyYl
+
+- award: "CERN's Identity and Access Management: A journey to Open Source"
   organization: CHEP
   year: 2019
   url: https://doi.org/10.1051/epjconf/202024503012

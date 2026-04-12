@@ -1,6 +1,113 @@
 // Resume styles
 // ---------------------------------------/
 
+// Dark theme mixin — single source of truth for all dark-mode overrides
+@mixin dark-theme {
+  .wrapper { background: $color-bg-dark; }
+
+  .page-header {
+    .header-name { color: $color-text-dark-primary; }
+    .header-contact-info { color: $color-text-dark-secondary; }
+    .title-bar {
+      border-top-color: $color-border-dark;
+      border-bottom-color: $color-border-dark;
+      .header-title { color: $color-text-dark-secondary; }
+    }
+  }
+
+  .section-header {
+    border-top-color: $color-border-dark;
+    border-bottom-color: $color-border-dark;
+    h2 { color: $color-text-dark-primary; }
+  }
+
+  .icon-links {
+    border-top-color: $color-border-dark;
+    .icon path { fill: $color-text-dark-secondary; }
+  }
+
+  .contact-button {
+    background-color: $color-bg-button-dark;
+    color: $color-text-dark-primary;
+    &:hover { background-color: $color-text-dark-primary; color: $color-bg-button-dark; }
+  }
+
+  .content-section {
+    .resume-item-title { color: $color-text-dark-primary; }
+    .resume-item-title a { color: $color-text-dark-secondary; &:hover { color: #fff; } }
+    .resume-item-details { color: $color-text-dark-muted; }
+    .award-summary { color: $color-text-dark-primary; &::before { color: $color-text-dark-primary; } a { color: $color-text-dark-secondary !important; border-bottom-color: $color-border-dark-subtle; &:hover { color: #fff !important; } } }
+    .resume-item-copy { color: $color-text-dark-secondary; }
+    .resume-item-list a { color: $color-text-dark-secondary; border-bottom-color: $color-border-dark-subtle; &:hover { color: #fff; } }
+    li { color: $color-text-dark-secondary; }
+    li a { color: $color-text-dark-secondary; border-bottom-color: $color-border-dark-subtle; &:hover { color: #fff; } }
+    li.resume-item-copy a { color: $color-text-dark-secondary !important; border-bottom-color: $color-border-dark-subtle; &:hover { color: #fff !important; } }
+    p.resume-item-copy a { color: $color-text-dark-secondary !important; border-bottom-color: $color-border-dark-subtle; &:hover { color: #fff !important; } }
+  }
+
+  .page-footer {
+    border-top-color: $color-border-dark;
+    .footer-line { color: $color-footer-dark; }
+    .footer-line a { color: $color-text-dark-secondary; }
+  }
+
+  .heart { filter: grayscale(1) brightness(5); }
+  .content-section .resume-item-title a::after { filter: invert(1) brightness(1.5); }
+}
+
+// Light theme mixin — resets to light-mode defaults with !important for toggle override
+@mixin light-theme {
+  .wrapper { background: $color-bg-light; }
+
+  .page-header {
+    .header-name { color: $color-text-primary; }
+    .header-contact-info { color: $color-text-primary; }
+    .title-bar {
+      border-top-color: $color-border;
+      border-bottom-color: $color-border;
+      .header-title { color: $color-text-primary; }
+    }
+  }
+
+  .section-header {
+    border-top-color: $color-border;
+    border-bottom-color: $color-border;
+    h2 { color: $color-text-primary; }
+  }
+
+  .icon-links {
+    border-top-color: $color-border;
+    .icon path { fill: $color-text-primary; }
+  }
+
+  .contact-button {
+    background-color: $color-bg-button;
+    color: $color-text-primary;
+    &:hover { background-color: $color-text-primary; color: #fff; }
+  }
+
+  .content-section {
+    .resume-item-title { color: $color-text-primary; }
+    .resume-item-title a { color: $color-text-primary; &:hover { color: $color-text-secondary; } }
+    .resume-item-details { color: $color-text-primary; }
+    .award-summary { color: $color-text-primary !important; &::before { color: $color-text-primary !important; } a { color: $color-text-primary !important; border-bottom-color: $color-text-primary !important; &:hover { color: $color-text-muted !important; } } }
+    .resume-item-copy { color: $color-text-primary; }
+    li { color: $color-text-primary; }
+    li a { color: $color-text-primary !important; }
+    li.resume-item-copy a { color: $color-text-primary !important; }
+    p.resume-item-copy a { color: $color-text-primary !important; }
+  }
+
+  .page-footer {
+    border-top-color: $color-border;
+    .footer-line { color: $color-text-secondary; }
+    .footer-line a { color: $color-text-primary; }
+  }
+
+  .heart { filter: none; }
+  .content-section .resume-item-title a::after { filter: none; }
+}
+
 // util
 
 .section-header {
@@ -31,8 +138,8 @@
 
   .header-name {
     @include sans;
-    font-size: 3rem;
-    font-weight: 900;
+    font-size: 3.5rem;
+    font-weight: 700;
     text-align: center;
     letter-spacing: -.15rem;
     line-height: 1;
@@ -74,6 +181,11 @@
   }
 }
 
+.mono {
+  font-family: $font-mono;
+  font-weight: 700;
+}
+
 .icon-links {
   margin: 0;
   padding: 0;
@@ -81,7 +193,7 @@
   position: relative;
   top: 4px;
   text-align: center;
-  border-top: 2px solid #c7c7c7;
+  border-top: 2px solid $color-border;
   padding-top: .4rem;
 
   @include media_larger_than_mobile {
@@ -98,7 +210,7 @@
   .icon-link { display: inline-block;
 
     &:hover .icon path {
-      fill: #333;
+      fill: $color-text-primary;
       @include transition(all .2s ease);
     }
   }
@@ -110,7 +222,7 @@
 
 .contact-button {
   @include border-radius(3px);
-  background-color: #efefef;
+  background-color: $color-bg-button;
   text-decoration: none;
   text-align: center;
   display: block;
@@ -118,13 +230,13 @@
   width: 220px;
   font-size: 1.375rem;
   @include sans_light;
-  color: #333;
+  color: $color-text-primary;
   line-height: 55px;
   @include transition(all .2s ease);
 
   &:hover {
-    background-color: #333;
-    color: #fff;
+    background-color: $color-text-primary;
+    color: $color-bg-light;
   }
 
   &.not-looking { width: 400px; }
@@ -149,10 +261,6 @@
     font-size: 1.125rem;
     margin: 0 0 .75rem;
     line-height: 1;
-
-    &.award-title {
-      font-size: 1rem;
-    }
   }
 
   .resume-item-title,
@@ -160,24 +268,68 @@
   .resume-item-copy,
   .resume-item-list {
     a {
-      color: #333;
+      color: $color-text-primary;
       text-decoration: none;
       border-bottom: 1px solid;
 
       &:hover {
         border-bottom: none;
-        color: #9c9c9c;
+        color: $color-text-muted;
       }
     }
   }
 
+  .resume-item-title a {
+    border-bottom: none;
+    color: $color-text-primary;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 0.65em;
+      height: 0.65em;
+      margin-left: 0.2em;
+      background-image: url('../images/external-link.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.8;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      color: $color-text-secondary;
+      &::after { opacity: 1; }
+    }
+  }
+
   .resume-item-copy { margin: .75rem 0 0; }
+
+  .award-summary {
+    padding-left: 1.5rem;
+    color: $color-text-primary;
+
+    &::before {
+      content: '\2605  ';
+      color: $color-text-primary;
+    }
+
+    a {
+      color: $color-text-primary;
+      text-decoration: none;
+      border-bottom: 1px solid;
+
+      &:hover {
+        border-bottom: none;
+        color: $color-text-muted;
+      }
+    }
+  }
 }
 
 // footer styles
 
 .page-footer {
-  border-top: 4px solid #c7c7c7;
+  border-top: 4px solid $color-border;
   padding-top: 1.5rem;
   text-align: center;
   margin-bottom: 3rem;
@@ -185,16 +337,82 @@
   .footer-line {
     margin: 0;
     font-size: .875rem;
-    color: #999;
+    color: $color-text-secondary;
 
     > a {
       font-weight: 700;
-      color: #333;
+      color: $color-text-primary;
     }
   }
 }
 
 .print-only { display: none !important }
+
+@media (prefers-color-scheme: dark) {
+  body { color: $color-text-dark-primary; }
+  @include dark-theme;
+}
+
+html.dark { background: $color-bg-dark !important; }
+html.light { background: $color-bg-light !important; }
+
+body.light {
+  background: $color-bg-light !important;
+  color: $color-text-primary !important;
+  @include light-theme;
+}
+
+body.dark {
+  background: $color-bg-dark !important;
+  color: $color-text-dark-primary !important;
+  @include dark-theme;
+}
+
+// Terminal intro styles (extracted from inline styles in _config.yml)
+.terminal-intro {
+  font-family: $font-mono;
+  background-color: $terminal-bg;
+  color: $terminal-text;
+  padding: 10px 14px;
+  border-radius: 5px;
+  font-size: 0.95em;
+}
+
+.terminal-prompt {
+  color: $terminal-prompt;
+}
+
+.terminal-cursor {
+  color: $terminal-prompt;
+}
+
+// Cursor blink animation (extracted from inline <style>)
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+#cursor {
+  animation: blink 1.5s step-end infinite;
+}
+
+#theme-toggle {
+  background: none;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 2px 8px;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  line-height: 1.5rem;
+
+  &:hover {
+    border-color: $color-text-primary;
+  }
+}
 
 @media print {
   .no-print { display: none !important }
@@ -225,10 +443,6 @@
       margin: 0 0 .75rem;
       line-height: .7em;
       font-style:italic;
-
-      &.award-title {
-        font-size: 11px;
-      }
     }
   }
 }

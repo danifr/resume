@@ -2,16 +2,16 @@
 # uncomment the urls if you wish to display them, and add your own URL
 
 # Wordpress blog
-- project: Details that make things not work
+- project: Pequeñas cosas que importan
   role: Main collaborator
   duration: 2010 &mdash; Present
   url: "https://dafero.wordpress.com"
-  description: Personal Blog
+  description: Personal blog about software engineering, debugging stories, and lessons learned
 
 # Evafobi
-- project: Changeability evaluator of bi-dimensional figures
+- project: Evaluador de variabilidad de formas bidimensionales
   role: Main developer
   duration: 2010
   url: "https://evafo2d.sourceforge.io"
-  description: Implementation of the scientific paper <a href="https://www.researchgate.net/publication/220146390_A_Stochastic_Order_of_Shape_Variability_with_an_Application_to_Cell_Nuclei_Involved_in_Mastitis">A Stochastic Order of Shape Variability with an Application to Cell Nuclei Involved in Mastitis</a>
+  description: Implementation of the scientific paper <a href="https://www.researchgate.net/publication/220146390_A_Stochastic_Order_of_Shape_Variability_with_an_Application_to_Cell_Nuclei_Involved_in_Mastitis">A Stochastic Order of Shape Variability with an Application to Cell Nuclei Involved in Mastitis</a>. Source code available <a href="https://sourceforge.net/projects/evafo2d">here</a>.
 

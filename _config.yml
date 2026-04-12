@@ -1,6 +1,6 @@
 # Site settings
 title: "Daniel Fernández Rodríguez"
-description: "Personal page for Jekyll and GitHub Pages sites."
+description: "Resume of Daniel Fernández Rodríguez, Site Reliability Engineer."
 
 # Build settings
 markdown: kramdown
@@ -11,19 +11,18 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Daniel Fernández Rodríguez"
-resume_title:                   "Site Reliability Engineer with 💙 for open source"
+resume_title:                   "Cloud Platform Engineer with <span class='heart'>🖤</span> for open source"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "danielfr@outlook.com"
 
-# the next two items are used for schema itemprops in _layouts/resume.html
-resume_contact_telephone:       "555-7777"
+# used for schema itemprop in _layouts/resume.html
 resume_contact_address:         "Geneva, Switzerland"
 
-resume_header_contact_info:     "Geneva, Switzerland • danielfr@outlook.com"
+resume_header_contact_info:     "✦ Geneva, Switzerland • danielfr@outlook.com"
 display_header_contact_info:    "true"
 
-resume_header_intro: "<p>$> Multi-skilled software engineer with a demonstrated experience deploying and running services in production. I am an open-source enthusiast and I actively participate in the open source community.</p>"
+resume_header_intro: '<p id="terminal-intro" class="terminal-intro"><span class="terminal-prompt">$&gt;</span> <span id="typed-cmd"></span><span id="cursor" class="terminal-cursor">█</span><br><span id="typed-text"></span></p>'
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
@@ -47,7 +46,7 @@ resume_section_skills:          true
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
   resume_github_url:            "https://github.com/danifr"
-  resume_twitter_url:           "http://twitter.com/dafero"
+  resume_twitter_url:           "https://twitter.com/dafero"
   #resume_dribbble_url:          "https://dribbble.com/jag"
   # resume_facebook_url:          "insert Facebook URL here"
   resume_linkedin_url:          "https://www.linkedin.com/in/dafero"

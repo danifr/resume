@@ -1,17 +1,27 @@
 # Jobs
+# SRE at OpenBrainInstitute
+- company: <a href="https://www.openbraininstitute.org">Open Brain Institute</a> - Lausanne, Switzerland
+  position: Cloud Platform Engineer
+  duration: Jan, 2025 &mdash; present
+  summary:
+    - Primary administrator of Keycloak service; managing upgrades, multi-provider SSO integrations (GitHub, Google, Microsoft Entra ID), custom theming, and token exchange
+    - Main contributor and maintainer of Terraform codebase; managing modules, remote state, and CI/CD pipelines across AWS and Azure
+    - Managing lifecycle of microservices on AWS ECS and EKS, including container registry migration from Docker Hub to AWS ECR
+    - Deployed and configured JupyterHub on AWS EKS and Azure AKS, managing networking, autoscaling, ingress, and storage
+    - Implemented security monitoring with AWS GuardDuty and SecurityHub; actively remediating vulnerabilities and hardening access controls
+    - Replaced public SSH bastion host with AWS Session Manager and enforced secrets management via CI/CD checks
+
 # SRE at BBP EPFL
-- company: EPFL Blue Brain Project - Geneva &bull;  🇨🇭
+- company: <a href="https://portal.bluebrain.epfl.ch/">EPFL Blue Brain Project</a> - Geneva, Switzerland
   position: Site Reliability Engineer
-  duration: Mar, 2020 &mdash; present
+  duration: Mar, 2020 &mdash; Dec, 2024
   summary:
     - Reworked existing SSO service to make it more resilient and highly available
-    - Deployed new service to launch Jupyter notebooks directly on BB5 via Slurm scheduler
-    - Aided with migration from puppet v4 to puppet v6
-    - Strong focus in reducing technical debt, automating tasks and cleaning up old code and services
-    - Provide help and technical advice to other members of the organization
-
-# Fellow at CERN
-- company: CERN (Authentication and Authorization Team) - Geneva &bull;🇨🇭
+    - Deployed new service to launch Jupyter notebooks directly on <a href="https://www.cscs.ch/computers/blue-brain-5/">BB5 Supercomputer</a> via Slurm scheduler
+    - Aided with migration from Puppet v4 to Puppet v6
+    - Focused on reducing technical debt, automating tasks and cleaning up old code and services
+    - Provided help and technical advice to other members of the organization
+- company: <a href="https://home.cern/">CERN</a> (Authentication and Authorization Team) - Geneva, Switzerland
   position: Software Engineer
   duration: Feb, 2016 &mdash; Jan, 2020
   summary:
@@ -20,29 +30,29 @@
     - Defined and planned the migration from ADFS to Keycloak
     - Added continuous integration and continuous delivery for team internal projects
     - Developed RESTful API to integrate Keycloak with other systems at CERN
-    - Migrated applications to containers and deploy them on PaaS
+    - Migrated applications to containers and deployed them on PaaS
 
 # Project Associate
-- company: CERN (Cloud Infrastructure Team) - Geneva &bull;  🇨🇭
+- company: <a href="https://home.cern/">CERN</a> (Cloud Infrastructure Team) - Geneva, Switzerland
   position: Software Engineer
   duration: Feb, 2014 &mdash; Jan, 2016
   summary:
     - Part of CERN Cloud Infrastructure team; OpenStack deployment with ~7000 compute nodes
     - Deployed a workflow automation tool to reduce toil and ease the operational cost of running a private cloud
-    - Identify and implement workflows to automate routine operational procedures on the CERN Cloud
+    - Identified and implemented workflows to automate routine operational procedures on the CERN Cloud
     - Deployed fully puppetized, resilient, distributed, and highly available services
     - Developed a set of python libraries and scripts to interact with other services deployed at CERN
 
 # IT Consultant
-- company: Inter-American Development Bank - Washington DC &bull;  🇺🇸
+- company: <a href="https://www.iadb.org/">Inter-American Development Bank</a> - Washington DC, USA
   position: IT Security Consultant
   duration: Jun, 2013  &mdash; Dec, 2013
   summary:
-    - Responsible for the installation, deployment, and configuration of AppSense (now https://ivanti.com), a Management Platform tool for Windows to control what users can install on their computers
+    - Responsible for the installation, deployment, and configuration of AppSense (now <a href="https://www.ivanti.com/">Ivanti</a>), a Management Platform tool for Windows to control what users can install on their computers
     - Around 5.000 of the bank employees still use it every day
 
 # ICEX
-- company: ICEX (Spanish Institute for Foreign Trade) - Madrid &bull;  🇪🇸
+- company: <a href="https://www.icex.es/">ICEX (Spanish Institute for Foreign Trade)</a> - Madrid, Spain
   position: Junior Software Engineer
   duration: Sep, 2011  &mdash; Oct, 2012
   summary:
