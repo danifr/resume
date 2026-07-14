@@ -31,12 +31,21 @@ document.addEventListener('DOMContentLoaded', function() {
   // Dark/light mode toggle
   var toggle = document.getElementById('theme-toggle');
   var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (prefersDark) { document.body.classList.add('dark'); document.documentElement.classList.add('dark'); }
+  if (prefersDark) {
+    document.body.classList.add('dark');
+    document.documentElement.classList.add('dark');
+  } else {
+    document.body.classList.add('light');
+    document.documentElement.classList.add('light');
+  }
+  toggle.textContent = prefersDark ? '◑' : '◐';
   toggle.addEventListener('click', function() {
-    document.body.classList.toggle('dark');
-    document.documentElement.classList.toggle('dark');
-    document.body.classList.toggle('light');
-    document.documentElement.classList.toggle('light');
-    toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌑';
+    var isDark = document.body.classList.contains('dark');
+    document.body.classList.remove('dark', 'light');
+    document.documentElement.classList.remove('dark', 'light');
+    var newTheme = isDark ? 'light' : 'dark';
+    document.body.classList.add(newTheme);
+    document.documentElement.classList.add(newTheme);
+    toggle.textContent = newTheme === 'dark' ? '◑' : '◐';
   });
 });

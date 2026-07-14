@@ -36,7 +36,7 @@
     .resume-item-title { color: $color-text-dark-primary; }
     .resume-item-title a { color: $color-text-dark-secondary; &:hover { color: #fff; } }
     .resume-item-details { color: $color-text-dark-muted; }
-    .award-summary { color: $color-text-dark-primary; &::before { color: $color-text-dark-primary; } a { color: $color-text-dark-secondary !important; border-bottom-color: $color-border-dark-subtle; &:hover { color: #fff !important; } } }
+    .award-summary { color: $color-text-dark-primary !important; &::before { color: $color-text-dark-primary !important; } a { color: $color-text-dark-secondary !important; border-bottom-color: $color-border-dark-subtle; &:hover { color: #fff !important; } } }
     .resume-item-copy { color: $color-text-dark-secondary; }
     .resume-item-list a { color: $color-text-dark-secondary; border-bottom-color: $color-border-dark-subtle; &:hover { color: #fff; } }
     li { color: $color-text-dark-secondary; }
